@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import signUpImage from '../../assets/logo.svg'
 
 export const Container = styled.div`
   height: 100vh;
@@ -26,4 +27,10 @@ export const Content = styled.div`
       }
     }
   }
+`;
+
+export const Background = styled.div`
+  background: url(${signUpImage}) no-repeat center;
+  flex: 1;
+  background-size: cover;
 `;

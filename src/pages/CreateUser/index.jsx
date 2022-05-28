@@ -1,10 +1,11 @@
-import { Container, Content } from './styles'
+import { Container, Content, Background } from './styles'
 import Input from '../../components/Input'
 import Button from '../../components/Button'
 
 function CreateUser() {
   return (
     <Container>
+      <Background />
       <Content>
         <div>
           <form>
