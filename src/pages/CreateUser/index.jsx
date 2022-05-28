@@ -4,11 +4,12 @@ import Button from '../../components/Button'
 import api from '../../services/api'
 import { useState } from 'react'
 import { toast } from 'react-toastify'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 function CreateUser() {
   const [nome, setNome] = useState("");
   const [username, setUsername] = useState("");
+  let navigate = useNavigate()
 
   async function handleCreateUser(event) {
     try {
@@ -24,6 +25,8 @@ function CreateUser() {
         type: "success",
         autoClose: 5000
       })
+
+      navigate('/listUsers')
     } catch(err) {
       toast('Erro ao criar usuário', {
         position: 'top-right',
