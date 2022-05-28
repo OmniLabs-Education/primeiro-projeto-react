@@ -4,6 +4,7 @@ import Button from '../../components/Button'
 import api from '../../services/api'
 import { useState } from 'react'
 import { toast, ToastContainer } from 'react-toastify'
+import { Link } from 'react-router-dom'
 
 function CreateUser() {
   const [nome, setNome] = useState("");
@@ -56,7 +57,12 @@ function CreateUser() {
               Cadastrar
             </Button>
           </form>
+
+            <Link to="/listUsers">
+              Listagem de usuários
+            </Link>
         </div>
+
 
         <ToastContainer />
       </Content>

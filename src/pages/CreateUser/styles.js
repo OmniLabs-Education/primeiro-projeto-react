@@ -16,6 +16,10 @@ export const Content = styled.div`
   background: #fff;
 
   div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
     form {
       margin: 80px 0;
       width: 340px;
@@ -25,6 +29,12 @@ export const Content = styled.div`
         color: #000;
         margin-bottom: 24px;
       }
+    }
+
+    a {
+      color: #000;
+      margin-top: 24px;
+      text-decoration: none;
     }
   }
 `;
