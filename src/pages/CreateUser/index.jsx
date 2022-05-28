@@ -1,5 +1,6 @@
 import { Container, Content } from './styles'
 import Input from '../../components/Input'
+import Button from '../../components/Button'
 
 function CreateUser() {
   return (
@@ -7,11 +8,15 @@ function CreateUser() {
       <Content>
         <div>
           <form>
-            <Input type="text" />
+            <h1>Faça seu cadastro</h1>
 
-            <Input type="text" />
+            <Input type="text" placeholder="Digite seu nome" />
 
-            <button>Cadastrar</button>
+            <Input type="text" placeholder="Digite o usuário" />
+
+            <Button>
+              Cadastrar
+            </Button>
           </form>
         </div>
       </Content>
