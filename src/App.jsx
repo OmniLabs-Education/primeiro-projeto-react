@@ -1,6 +1,10 @@
+import { Container, Title } from './home'
+
 function App() {
   return (
-    <h1>Teste</h1>
+    <Container>
+      <Title>Teste</Title>
+    </Container>
   )
 }
 
