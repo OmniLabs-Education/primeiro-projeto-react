@@ -3,7 +3,7 @@ import Input from '../../components/Input'
 import Button from '../../components/Button'
 import api from '../../services/api'
 import { useState } from 'react'
-import { toast, ToastContainer } from 'react-toastify'
+import { toast } from 'react-toastify'
 import { Link } from 'react-router-dom'
 
 function CreateUser() {
@@ -58,13 +58,10 @@ function CreateUser() {
             </Button>
           </form>
 
-            <Link to="/listUsers">
+            <Link to="/listUsers/teste">
               Listagem de usuários
             </Link>
         </div>
-
-
-        <ToastContainer />
       </Content>
     </Container>
   )
